@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
-import './styles/index.css';
+import './styles/index.scss';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+import { Universe } from './universe/Universe.ts';
+import UI from './UI.tsx';
+
+new Universe(document.getElementById('universe')!);
+
+ReactDOM.createRoot(document.getElementById('ui')!).render(
   <React.StrictMode>
-    <App />
+    <UI />
   </React.StrictMode>
 );
+
