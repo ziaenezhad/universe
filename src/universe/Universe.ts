@@ -3,11 +3,12 @@ import { EquilateralTriangle } from './renderer/graphics/EquilateralTriangle';
 
 export class Universe {
   private readonly renderer: Renderer;
+
   constructor(container: HTMLElement) {
     this.renderer = new Renderer(container);
     const triangle = this.renderer.createSprite(
       new EquilateralTriangle(
-        100,
+        50,
         { color: 'gray' },
         { color: 'white', width: 3 }
       ),

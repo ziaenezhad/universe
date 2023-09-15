@@ -1,4 +1,5 @@
 import { Graphics } from 'pixi.js';
+
 export interface FillStyle {
   color?: number | string;
   alpha?: number;
