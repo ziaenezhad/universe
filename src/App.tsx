@@ -1,6 +1,6 @@
 import { Component, ReactNode } from 'react';
 import './styles/UI.scss';
-import TopBar from './components/Topbar';
+import TopBar from './components/TopBar';
 
 export default class App extends Component {
   render(): ReactNode {
