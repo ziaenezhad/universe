@@ -1,22 +1,18 @@
+@import 'bootstrap/scss/bootstrap';
+
 body {
   margin: 0;
-  color: gray;
-  height: 100vh;
-  & > table {
-    width: 100%;
-    height: 100%;
-    #universe {
-      width: 80%;
-      background-color: gray;
-    }
-
-    #ui {
-      width: 200%;
-      direction: rtl;
-    }
+  & > div {
+    position: fixed;
+    top: 0;
+    width: 100vw;
   }
 }
 
-td {
-  padding: 0;
+#ui {
+}
+
+#universe {
+  top: 56px;
+  height: calc(100vh - 56px);
 }

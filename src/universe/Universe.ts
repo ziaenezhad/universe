@@ -5,8 +5,7 @@ export class Universe {
   constructor(container: HTMLElement) {
     this.pixi = new Application({
       background: 'black',
-      width: container.clientWidth,
-      height: container.clientHeight - 4,
+      resizeTo: container,
     });
     container.appendChild(this.pixi.view as HTMLCanvasElement);
   }
